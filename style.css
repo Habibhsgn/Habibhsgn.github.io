@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 25%;
+    padding-left: 30%;
+    font-weight: bold;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #264559;
+
+}
+
+/* tombol toggle menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 41px;
+    height: 28px;
+    left: -5px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #264559;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+
+/* banner website */
+.container-banner {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-around;
+    z-index: -1;
+    align-items: center;
+}
+
+.gambar img {
+    width: 747px;
+    flex: 1;
+}
+
+div .kata {
+    font-size: 64px;
+    line-height: 75px;
+    flex: 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold 600;
+    color: #264559;
+}
+
+.kata p {
+    font-size: 30px;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.medsos {
+    margin-top: 15px;
+}
+
+.medsos img {
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+}
+
+/* About me */
+.container-about {
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.container-about h2 {
+    text-align: center;
+    color: #264559;
+
+}
+
+.aboutme {
+    margin: 10px auto;
+    display: flex;
+}
+
+
+
+.bio {
+    width: 55%;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: justify;
+    margin-left: 35px;
+}
+
+.bio p {
+    padding: 50px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.bio button {
+    margin-left: 50px;
+    border: none;
+    background-color: #E5E642;
+    width: 173px;
+    height: 42px;
+    border-radius: 19px;
+    cursor: pointer;
+
+}
+
+.bio button:hover {
+    box-shadow: 1px 1px 15px rgba(236, 252, 10, 0.692);
+    transition: 0.3s;
+}
+
+.bio button a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #264559;
+}
+
+.potopp img {
+    width: 354px;
+    height: 354px;
+    padding-left: 70px;
+
+}
+
+/* education background */
+.judul {
+    width: 88%;
+    margin: 20px auto;
+    font-weight: lighter;
+    font-style: italic;
+    color: #f8f81a;
+    font-size: 15pt;
+}
+
+.container-school {
+    max-width: 88%;
+    margin: 50px auto;
+    display: flex;
+
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(228, 226, 226, 0.933);
+    border-radius: 28px;
+    flex: 1;
+    margin: 10px;
+
+}
+
+.card:hover {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.card .header {
+    height: 276px;
+}
+
+.header img {
+    width: 262px;
+    height: 167;
+    margin: 40px auto;
+    margin-left: 25px;
+}
+
+
+.card .content {
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: #264559;
+    box-sizing: border-box;
+}
+
+/* my skill */
+.container-skill {
+
+    max-width: 86%;
+    margin: 50px auto;
+}
+
+.skil h2 {
+    text-align: center;
+    margin: 20px auto;
+    color: #264559;
+}
+
+.card-skil {
+    box-shadow: 1px 1px 15px rgba(133, 133, 133, 0.25);
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-around;
+    height: 257px;
+    align-items: center;
+}
+
+.card-skil .content-skil {
+    padding-top: 20px;
+}
+
+.content-skil img {
+    width: 140px;
+    height: 140px;
+    box-sizing: border-box;
+
+
+}
+
+.card-skil .judul-skil {
+    padding-bottom: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: #264559;
+}
+
+/* gallery */
+.container-gallery {
+    max-width: 88%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.content-gallery {
+    width: 25%;
+
+}
+
+.gallery-judul {
+    text-align: center;
+    justify-content: center;
+    color: #264559;
+}
+
+
+
+.content-gallery img {
+    width: 100%;
+}
+
+/* pertanyaan */
+.pertanyaan {
+    width: 88%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pertanyaan p {
+    font-weight: bold;
+    color: #264559;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.pertanyaan button {
+    margin-left: 20px;
+    border: none;
+    background-color: #E5E642;
+    width: 160px;
+    height: 40px;
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+.pertanyaan button a {
+    text-decoration: none;
+    color: #264559;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: #264559;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    width: 88%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-me {
+    padding: 20px;
+}
+
+.contact-me h4 {
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact-me ul li {
+    color: #FFFFFF;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.contact-me ul li a {
+    color: #FFFFFF;
+}
+
+.contact-me ul li a:hover {
+    color: rgb(64, 64, 248);
+}
+
+.connect {
+    color: #FFFFFF;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box-sosmed {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-sosmed {
+    padding: 5px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    color: #305B77;
+}
+
+
+/* breakpoint */
+/* ukuran tab */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+    .gambar img {
+        width: 400px;
+    }
+
+    div .kata {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .kata p {
+        font-size: 15px;
+        line-height: 17px;
+
+    }
+
+    .medsos {
+        margin-top: 10px;
+    }
+
+    .medsos img {
+        width: 35px;
+        height: 35px;
+
+    }
+
+    .potopp img {
+        width: 200px;
+        height: 200px;
+        padding-left: 0px;
+    }
+
+    .bio {
+        font-size: 15px;
+        line-height: 20px;
+        width: 60%;
+    }
+
+    .bio p {
+        padding: 30px;
+        margin-top: 10px;
+    }
+
+    .bio button {
+        width: 140px;
+        height: 33px;
+        margin-left: 30px;
+
+    }
+
+    .bio button a {
+        font-size: 13px;
+    }
+
+    .judul {
+        font-size: 15pt;
+    }
+
+    .container-school {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 0;
+        width: 30%;
+    }
+
+    .card .header {
+        height: 200px;
+    }
+
+    .card .content {
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .header img {
+        margin-left: 0px;
+        margin: 0px auto;
+        width: 190px;
+        padding-top: 20px;
+        box-sizing: border-box;
+
+    }
+
+    .container-skill img {
+        height: 110px;
+        margin: 10px auto;
+    }
+
+    .card-skil .judul-skil {
+        font-size: 15px;
+    }
+
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        top: 0;
+        height: 100vh;
+        justify-content: space-evenly;
+        background-color: #FFFFFF;
+        width: 40%;
+        transform: translateX(100%);
+        transition: 1s;
+        border-radius: 5px;
+        box-shadow: 0;
+
+    }
+
+
+    nav ul.slide {
+        transform: translateX(0%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .gambar img {
+        width: 320px;
+
+    }
+
+    div .kata {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .kata p {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .medsos {
+        margin-top: 8px;
+    }
+
+    .medsos img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .aboutme {
+        flex-direction: column;
+        margin: 0px auto;
+    }
+
+    .potopp {
+        margin: 1px auto;
+    }
+
+    .potopp img {
+        order: 1;
+        width: 180px;
+        height: 180px;
+        padding-left: 0px;
+    }
+
+    .bio {
+        order: 2;
+        font-size: 15px;
+        margin: 0px auto;
+        line-height: 20px;
+    }
+
+    .bio p {
+        justify-content: center;
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .bio button {
+        width: 140px;
+        height: 33px;
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+
+    .bio button a {
+        font-size: 13px;
+    }
+
+    .container-school {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0;
+        width: 50%;
+    }
+
+    .card .header {
+        height: 200px;
+    }
+
+    .card .content {
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .header img {
+        margin-left: 0px;
+        margin: 0px auto;
+        width: 190px;
+        padding-top: 20px;
+        box-sizing: border-box;
+
+    }
+
+    .container-skill img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-skil .judul-skil {
+        font-size: 10px;
+    }
+
+    .content-gallery {
+        width: 50%;
+    }
+
+    .pertanyaan p {
+        font-size: 15px;
+    }
+
+    .pertanyaan {
+        flex-direction: column;
+    }
+
+    .pertanyaan button {
+        margin: 25px auto;
+        width: 130px;
+    }
+
+    .pertanyaan button a {
+        font-size: 13px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer {
+        height: 370px;
+    }
+
+    .icon-sosmed {
+        padding: 5px;
+    }
+
+    .box-sosmed {
+        justify-content: left;
+    }
+
+}
