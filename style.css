@@ -517,7 +517,7 @@ div .kata {
 }
 
 /* ukuran mobile */
-@media screen and (max-width: 424px) {
+@media screen and (min-width: 424px) {
     .menu-toggle {
         display: flex;
     }
