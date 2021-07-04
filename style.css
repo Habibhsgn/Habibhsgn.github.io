@@ -518,8 +518,9 @@ div .kata {
 
 /* ukuran mobile */
 @media screen and (max-width: 424px) {
-    body{
-    overflow-x: hidden;
+    html body {
+        overflow-x: hidden;
+        position: fixed;
     }
     .menu-toggle {
         display: flex;
