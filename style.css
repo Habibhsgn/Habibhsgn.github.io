@@ -517,10 +517,7 @@ div .kata {
 }
 
 /* ukuran mobile */
-@media screen and (max-width: 576px) {
-    body{
-        display: none;
-    }
+@media screen and (max-width: 320px) {
     .menu-toggle {
         display: flex;
     }
@@ -548,7 +545,7 @@ div .kata {
     }
 
     .gambar img {
-        width: 320px;
+        width: 190px;
 
     }
 
@@ -567,8 +564,8 @@ div .kata {
     }
 
     .medsos img {
-        width: 25px;
-        height: 25px;
+        width: 15px;
+        height: 15px;
     }
 
 
@@ -583,8 +580,8 @@ div .kata {
 
     .potopp img {
         order: 1;
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
         padding-left: 0px;
     }
 
@@ -606,7 +603,7 @@ div .kata {
         width: 140px;
         height: 33px;
         margin-top: 10px;
-        margin-left: 70px;
+        margin-left: 20px;
     }
 
     .bio button a {
@@ -619,34 +616,39 @@ div .kata {
 
     .card {
         flex: 0;
-        width: 50%;
+        width: 40%;
     }
 
     .card .header {
-        height: 200px;
+        height: 100px;
     }
 
     .card .content {
-        padding-bottom: 20px;
-        font-size: 12px;
+        padding-bottom: 10px;
+        font-size: 10px;
     }
 
     .header img {
         margin-left: 0px;
         margin: 0px auto;
-        width: 190px;
+        width: 100px;
         padding-top: 20px;
         box-sizing: border-box;
 
     }
 
     .container-skill img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     .card-skil .judul-skil {
-        font-size: 10px;
+        font-size: 9px;
+    }
+
+    .card-skil {
+        height: 180px;
+        border-radius: 20px;
     }
 
     .content-gallery {
