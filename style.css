@@ -621,6 +621,7 @@ div .kata {
     .card {
         flex: 0;
         width: 40%;
+        border-radius: 10px;
     }
 
     .card .header {
