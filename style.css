@@ -535,7 +535,7 @@ div .kata {
         justify-content: space-evenly;
         background-color: #FFFFFF;
         width: 40%;
-        transform: translateX(100%);
+        opacity: 0;
         transition: 1s;
         border-radius: 5px;
         box-shadow: 0;
@@ -544,7 +544,7 @@ div .kata {
 
 
     nav ul.slide {
-        transform: translateX(0%);
+        opacity: 1;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
